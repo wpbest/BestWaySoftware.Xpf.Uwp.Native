@@ -2,12 +2,19 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata minClientVersion="3.2">
         <id>BestWaySoftware.Xpf.Uwp.Native</id>
+        <title>Best Way Software Xpf Native Library for Windows 10 UWP</title>
         <version>1.0.0.1</version>
-        <authors>Best Way Software</authors>
-        <description>Xpf Library</description>
+        <authors>BestWaySoftware</authors>
+        <owners>BestWaySoftware</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Easily add Xpf to your applications. The Best Way Software Xpf Library for Universal Windows Platform</description>
+        <summary>Xpf UWP library</summary>
+        <releaseNotes>Xpf version 1.0.0.1</releaseNotes>
+        <copyright>Copyright © Best Way Software</copyright>
+        <tags>BestWaySoftware Xpf Uwp Native</tags>
     </metadata>
     <files>
-        <file src="BestWaySoftware.Xpf.Uwp.Native.targets"                          target="build\native\BestWaySoftware.Xpf.Uwp.Native.targets" />
+        <file src="BestWaySoftware.Xpf.Uwp.Native.targets"                          target="build\native\" />
         <file src="BestWaySoftware.Xpf.Uwp.Native\BestWaySoftware.Xpf.Uwp.Native.h" target="build\native\include\" />
         <file src="Output\Bin\Win32\Debug\BestWaySoftware.Xpf.Uwp.Native.lib"       target="build\native\win10-x86\" />
         <file src="Output\Bin\Win32\Debug\BestWaySoftware.Xpf.Uwp.Native.dll"       target="build\native\win10-x86\" />
@@ -21,18 +28,17 @@
         <file src="Output\Bin\ARM\Debug\BestWaySoftware.Xpf.Uwp.Native.dll"         target="build\native\win10-arm\" />
         <file src="Output\Bin\ARM\Debug\BestWaySoftware.Xpf.Uwp.Native.pdb"         target="build\native\win10-arm\" />
         <file src="Output\Bin\ARM\Debug\BestWaySoftware_Xpf_Uwp_Native.pri"         target="build\native\win10-arm\" />
-        <file src="Output\Bin\Win32\Release\BestWaySoftware.Xpf.Uwp.Native.lib"     target="runtimes\win10-x86\native" />
-        <file src="Output\Bin\Win32\Release\BestWaySoftware.Xpf.Uwp.Native.dll"     target="runtimes\win10-x86\native" />
-        <file src="Output\Bin\Win32\Release\BestWaySoftware.Xpf.Uwp.Native.pdb"     target="runtimes\win10-x86\native" />
-        <file src="Output\Bin\Win32\Release\BestWaySoftware_Xpf_Uwp_Native.pri"     target="runtimes\win10-x86\native" />
-        <file src="Output\Bin\x64\Release\BestWaySoftware.Xpf.Uwp.Native.lib"       target="runtimes\win10-x64\native" />
-        <file src="Output\Bin\x64\Release\BestWaySoftware.Xpf.Uwp.Native.dll"       target="runtimes\win10-x64\native" />
-        <file src="Output\Bin\x64\Release\BestWaySoftware.Xpf.Uwp.Native.pdb"       target="runtimes\win10-x64\native" />
-        <file src="Output\Bin\x64\Release\BestWaySoftware_Xpf_Uwp_Native.pri"       target="runtimes\win10-x64\native" />
-        <file src="Output\Bin\ARM\Release\BestWaySoftware.Xpf.Uwp.Native.lib"       target="runtimes\win10-arm\native" />
-        <file src="Output\Bin\ARM\Release\BestWaySoftware.Xpf.Uwp.Native.dll"       target="runtimes\win10-arm\native" />
-        <file src="Output\Bin\ARM\Release\BestWaySoftware.Xpf.Uwp.Native.pdb"       target="runtimes\win10-arm\native" />
-        <file src="Output\Bin\ARM\Release\BestWaySoftware_Xpf_Uwp_Native.pri"       target="runtimes\win10-arm\native" />
-        
+        <file src="Output\Bin\Win32\Release\BestWaySoftware.Xpf.Uwp.Native.lib"     target="runtimes\win10-x86\native\" />
+        <file src="Output\Bin\Win32\Release\BestWaySoftware.Xpf.Uwp.Native.dll"     target="runtimes\win10-x86\native\" />
+        <file src="Output\Bin\Win32\Release\BestWaySoftware.Xpf.Uwp.Native.pdb"     target="runtimes\win10-x86\native\" />
+        <file src="Output\Bin\Win32\Release\BestWaySoftware_Xpf_Uwp_Native.pri"     target="runtimes\win10-x86\native\" />
+        <file src="Output\Bin\x64\Release\BestWaySoftware.Xpf.Uwp.Native.lib"       target="runtimes\win10-x64\native\" />
+        <file src="Output\Bin\x64\Release\BestWaySoftware.Xpf.Uwp.Native.dll"       target="runtimes\win10-x64\native\" />
+        <file src="Output\Bin\x64\Release\BestWaySoftware.Xpf.Uwp.Native.pdb"       target="runtimes\win10-x64\native\" />
+        <file src="Output\Bin\x64\Release\BestWaySoftware_Xpf_Uwp_Native.pri"       target="runtimes\win10-x64\native\" />
+        <file src="Output\Bin\ARM\Release\BestWaySoftware.Xpf.Uwp.Native.lib"       target="runtimes\win10-arm\native\" />
+        <file src="Output\Bin\ARM\Release\BestWaySoftware.Xpf.Uwp.Native.dll"       target="runtimes\win10-arm\native\" />
+        <file src="Output\Bin\ARM\Release\BestWaySoftware.Xpf.Uwp.Native.pdb"       target="runtimes\win10-arm\native\" />
+        <file src="Output\Bin\ARM\Release\BestWaySoftware_Xpf_Uwp_Native.pri"       target="runtimes\win10-arm\native\" /> 
     </files>
 </package>
