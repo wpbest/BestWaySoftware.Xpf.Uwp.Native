@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Xpf-Platform Condition="'$(Platform)' == 'Win32'">x86</Xpf-Platform>
+    <Xpf-Platform Condition="'$(Platform)' != 'Win32'">$(Platform)</Xpf-Platform>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetPlatformIdentifier)' == 'UAP'">
+    <ReferenceCopyLocalPaths Condition="'$(Configuration)' == 'Release'" Include="$(MSBuildThisFileDirectory)..\..\runtimes\win10-$(Xpf-Platform)\native\BestWaySoftware.Xpf.Uwp.Native.dll" />
+    <ReferenceCopyLocalPaths Condition="'$(Configuration)' == 'Debug'"   Include="$(MSBuildThisFileDirectory)win10-$(Xpf-Platform)\BestWaySoftware.Xpf.Uwp.Native.dll" />
+  </ItemGroup>
+
+  <ItemDefinitionGroup Condition="'$(TargetPlatformIdentifier)' == 'UAP'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)win10-$(Xpf-Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies Condition="'$(Configuration)' == 'Release'">BestWaySoftware.Xpf.Uwp.Native.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)' == 'Debug'">BestWaySoftware.Xpf.Uwp.Native.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>  
+</Project>
