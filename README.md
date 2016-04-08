@@ -14,8 +14,22 @@ CreateNativeNuGet.cmd
 The nuget.exe nuget packaging tool must be installed
 Use download-nuget.cmd to install the nuget packaging tool
 
+Increment the nuget package version by editing text file NuGetPackageVersion.txt
+
+Run the CreateNativeNuGet.cmd batch/command file to create the nuget package
+
+Copy the new nuget packages into the NugetRepository subdirectory
+
 Load the Test.BestWaySoftware.Xpf.Uwp.Native application with the solution Test.BestWaySoftware.Xpf.Uwp.Native.sln
 
-Install the nuget package with the Visual Studio Nuget Package Manager
+Install the latest nuget package with the Visual Studio Nuget Package Manager
+
+Click on Tools -> Nuget Package Manager -> Manage Nuget Packages for Solutions...
+
+Select the Package source by clicking on the gear icon in the upper right corner
+
+Select the Local Package source and unselect the others.
+
+Dewpending on the version created, Select on Updates or Browse to select the new nuget package created.
 
 Build the application with the nuget package installed
