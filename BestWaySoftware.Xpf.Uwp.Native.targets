@@ -14,7 +14,7 @@
       <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories Condition="'$(Configuration)' == 'Release'">$(MSBuildThisFileDirectory)..\..\runtimes\win10-$(Xpf-Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)' == 'Release'">$(MSBuildThisFileDirectory)..\..\runtimes\win10-$(Xpf-Platform)\native\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalLibraryDirectories Condition="'$(Configuration)' == 'Debug'">$(MSBuildThisFileDirectory)win10-$(Xpf-Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>BestWaySoftware.Xpf.Uwp.Native.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
