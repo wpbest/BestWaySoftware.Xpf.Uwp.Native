@@ -30,6 +30,8 @@ Select the Package source by clicking on the gear icon in the upper right corner
 
 Select the Local Package source and unselect the others.
 
-Dewpending on the version created, Select on Updates or Browse to select the new nuget package created.
+Depending on the defined version created, Click the Select on Updates or Browse headings to select the new nuget package created.
+
+Install or Update the nuget package
 
 Build the application with the nuget package installed
